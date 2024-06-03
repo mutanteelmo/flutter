@@ -1,0 +1,79 @@
+sudo apt install openjdk-8-jdk
+java -version
+sudo apt install git
+git --version
+sudo dpkg -i code_1.87.2-1709912201_amd64.deb
+
+# Para instalação do android stduio
+# ver: https://developer.android.com/studio/install
+
+Instalar extensoes vs code
+    Dart (Dart Code)
+    Flutter (Dart Code)
+
+sudo dpkg --add-architecture i386
+# Para verificar se arquitetura foi adicionada
+sudo dpkg --print-foreign-architectures
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+    # E: Unable to locate package libncurses5:i386
+    # Baixar de: http://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/
+        sudo dpkg -i libtinfo5_6.2-0ubuntu2_i386.deb
+        sudo dpkg -i libncurses5_6.2-0ubuntu2_i386.deb (depende do de cima)
+
+sudo tar -xf android-studio-2023.2.1.24-linux.tar.gz -C /usr/local/
+cd /usr/local/android-studio/
+cd bin/
+./studio.sh 
+
+# No android studio, instalar plugins
+    Dart
+    Flutter
+
+# More actions
+    Virtual device manager
+    Baixar e Instalar Pixel 6
+
+# Instalar Flutter e seus requirements
+    # https://docs.flutter.dev/get-started/install/linux/android
+    sudo snap install flutter --classic
+    # No android studio
+        More actions >> SDK Manager >> Android SDK >> SDK Tools >> Marcar Android SDK Command Line Tools
+    # download dos binarios
+    flutter doctor --android-licenses
+
+# Se ocorrer erro : Unable to find bundled Java version
+    Ir na instalação do android studio (/usr/local/android-studio), copiar a pasta jbr renomeando para jre
+
+# UBUNTU - instalar kvm, se suportado
+    # ver: https://help.ubuntu.com/community/KVM/Installation
+    # verificar se suporta o kvm
+    kvm-ok
+    sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+    sudo adduser `id -un` libvirt
+    sudo adduser `id -un` kvm
+    virsh list --all
+    # virtual manager
+    sudo apt-get install virt-manager
+    # Reiniciar maquina após instalação
+
+
+PESQUISAR
+Como desabilitar o Device Bezels para o emulador do android
+No vscode do Mac, ele foi em Windows -> Show Device Bezles (No ubtun não aparece window)
+
+=================== Estrutura do projeto
+# .dart_tool - build do código feito em dart - não sobe pro git - não mexemos
+# .idea - configurações do intellyj (android studio é baseado nele) - não mexemos
+# android - proejto android
+# build - cria o projeto compilado para subir nos emuladores
+# ios - projeto ios
+# lib - local onde vamos trabalhar com o código dart
+# test - testes
+# projeto.iml - arquivo do intellyj
+# pubspec.lock - registro de pacotes baixados
+# pubspec.yaml - dependencias e configurações
+# README.md - arquivo markdown
+
+
+=================== main.dart
+ctrl + shift + k -> excluir linha no vscode
