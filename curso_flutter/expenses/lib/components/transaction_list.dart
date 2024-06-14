@@ -3,22 +3,20 @@ import '../models/transaction.dart';
 import 'package:intl/intl.dart';
 
 class TransactionList extends StatelessWidget {
-  // const MyWidget({super.key});
-
   final List<Transaction> transactions;
 
-  TransactionList(this.transactions);
+  const TransactionList(this.transactions, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        height: 300,
-        child: ListView.builder(
-          itemCount: transactions.length,
-          itemBuilder: (ctx, index) {
-            final tr = transactions[index];
-            return Card(
-                child: Row(
+    return SizedBox(
+      height: 300,
+      child: ListView.builder(
+        itemCount: transactions.length,
+        itemBuilder: (ctx, index) {
+          final tr = transactions[index];
+          return Card(
+            child: Row(
               children: [
                 Container(
                   margin: const EdgeInsets.symmetric(
@@ -31,10 +29,10 @@ class TransactionList extends StatelessWidget {
                       width: 2,
                     ),
                   ),
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   child: Text(
                     'R\$ ${tr.value.toStringAsFixed(2)}',
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
                       color: Colors.purple,
@@ -46,23 +44,24 @@ class TransactionList extends StatelessWidget {
                   children: [
                     Text(
                       tr.title,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
+                      style: const TextStyle(
                         fontSize: 16,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                     Text(
                       DateFormat('d MMM y').format(tr.date),
-                      style: TextStyle(
-                          fontWeight: FontWeight.normal,
-                          fontSize: 16,
-                          color: Colors.grey),
-                    )
+                      style: const TextStyle(
+                        color: Colors.grey,
+                      ),
+                    ),
                   ],
                 ),
               ],
-            ));
-          },
-        ));
+            ),
+          );
+        },
+      ),
+    );
   }
 }
