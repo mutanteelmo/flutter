@@ -1,0 +1,24 @@
+boleto_component
+    Boletos
+        Boleto(
+            numero
+            linhaDigitavel
+            listaMensalidades = null
+            isExpanded = false
+        )
+
+    //container com dados do boleto
+    List<ComponentBoleto> boletos = getBoletos() {
+        // requisição ao firebase
+        // monta container com linha digitavel e botoes
+        // return container
+    }
+
+    // forEach Boleto
+    map.boletos(
+        listaMensalidades = getMensalidades() // return table
+    )
+
+    itemBoleto          //ExpansionPanel
+        Boleto          //container
+        Mensalidade     //Table

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "304221443163",
+    "firebase_url": "https://testes-elmo-default-rtdb.firebaseio.com",
+    "project_id": "testes-elmo",
+    "storage_bucket": "testes-elmo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304221443163:android:f221e339b4b7121b2b1b7e",
+        "android_client_info": {
+          "package_name": "com.example.teste_tile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrHEQrkfOpGiwxP1NKXUiBlAd3CY9c7rE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
