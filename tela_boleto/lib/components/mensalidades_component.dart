@@ -26,8 +26,8 @@ class _MensalidadeComponentState extends State<MensalidadeComponent> {
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return CircularProgressIndicator();
-          } else if (snapshot.hasError) {
-            throw Exception("Erro ao carregar dados da api: \n ${snapshot.error}");
+          } else if (!snapshot.hasData) { // or hasError
+            return Text("Sem itens de mensalidade");
           } else if (snapshot.hasData) {
             List<Mensalidade> mensalidades = snapshot.data!;
             return Table(

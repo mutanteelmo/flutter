@@ -7,10 +7,10 @@ import 'package:flutter/material.dart';
 import 'package:teste_tile/models/Boleto.dart';
 import 'package:teste_tile/pages/lista_boletos_page.dart';
 import 'package:teste_tile/pages/mensalidade_page.dart';
-import 'components/lista_boletos_component.dart';
+import 'components/boletos_component.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
-import 'package:teste_tile/components/mensalidade_component.dart';
+import 'package:teste_tile/components/mensalidades_component.dart';
 import 'package:teste_tile/datafile.dart';
 
 void main() {

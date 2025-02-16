@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 import 'package:teste_tile/datafile.dart';
 import 'package:teste_tile/models/Boleto.dart';
 import 'package:teste_tile/models/Mensalidade.dart';
-import 'package:teste_tile/components/mensalidade_component.dart';
+import 'package:teste_tile/components/mensalidades_component.dart';
 
 class mensalidadePage extends StatefulWidget {
   final Boleto boleto;

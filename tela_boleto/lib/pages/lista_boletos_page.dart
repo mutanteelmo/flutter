@@ -3,7 +3,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:teste_tile/components/lista_boletos_component.dart';
+import 'package:teste_tile/components/boletos_component.dart';
 import 'package:teste_tile/datafile.dart';
 import 'package:teste_tile/models/Boleto.dart';
 
