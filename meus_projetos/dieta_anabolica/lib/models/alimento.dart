@@ -1,26 +1,26 @@
 class Alimento {
-  int id;
-  String name;
-  double caloria;
-  double carboidrato;
-  double proteina;
-  double gordura;
-  List<String> microNutrientes;
+  int? id;
+  String? nome;
+  double? calorias;
+  double? carboidrato;
+  double? proteina;
+  double? gordura;
+  List<String>? microNutrientes;
 
   Alimento({
-    required this.id,
-    required this.name,
-    required this.caloria,
-    required this.carboidrato,
-    required this.proteina,
-    required this.gordura,
+    this.id,
+    this.nome,
+    this.calorias,
+    this.carboidrato,
+    this.proteina,
+    this.gordura,
     this.microNutrientes = const [],
   });
 
   // Método para exibir as informações do alimento
   @override
   String toString() {
-    return 'Alimento{id: $id, name: $name, caloria: $caloria, carboidrato: $carboidrato, proteina: $proteina, gordura: $gordura, microNutrientes: $microNutrientes}';
+    return 'Alimento{id: $id, name: $nome, caloria: $calorias, carboidrato: $carboidrato, proteina: $proteina, gordura: $gordura, microNutrientes: $microNutrientes}';
   }
 }
 
@@ -28,8 +28,8 @@ void main() {
   // Exemplo de instância da classe Alimento
   Alimento maca = Alimento(
     id: 1,
-    name: 'Maçã',
-    caloria: 52,
+    nome: 'Maçã',
+    calorias: 52,
     carboidrato: 14,
     proteina: 0.3,
     gordura: 0.2,
@@ -41,8 +41,8 @@ void main() {
   // Nova instância para o alimento Ovo
   Alimento ovo = Alimento(
     id: 2,
-    name: 'Ovo',
-    caloria: 155,
+    nome: 'Ovo',
+    calorias: 155,
     carboidrato: 1.1,
     proteina: 13,
     gordura: 11,

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/curso_flutter/expenses/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/curso_flutter/expenses/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/curso_flutter/expenses/build" />
+      <excludeFolder url="file://$MODULE_DIR$/curso_flutter/projeto_perguntas/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/curso_flutter/projeto_perguntas/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/curso_flutter/projeto_perguntas/build" />
+      <excludeFolder url="file://$MODULE_DIR$/meus_projetos/dieta_anabolica/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/meus_projetos/dieta_anabolica/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/meus_projetos/dieta_anabolica/build" />
+      <excludeFolder url="file://$MODULE_DIR$/tela_boleto/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/tela_boleto/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/tela_boleto/build" />
+      <excludeFolder url="file://$MODULE_DIR$/tela_boleto/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/tela_boleto/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/tela_boleto/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/build" />
+      <excludeFolder url="file://$MODULE_DIR$/tela_boleto/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/tela_boleto/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/tela_boleto/windows/flutter/ephemeral/.plugin_symlinks/firebase_core/example/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
