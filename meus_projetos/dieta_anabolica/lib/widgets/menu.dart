@@ -1,5 +1,6 @@
 import 'package:dieta_anabolica/main.dart';
 import 'package:dieta_anabolica/pages/cadastro_alimento.dart';
+import 'package:dieta_anabolica/pages/lista_alimentos.dart';
 import 'package:flutter/material.dart';
 
 class Menu extends StatelessWidget {
@@ -41,7 +42,9 @@ class Menu extends StatelessWidget {
               ),
               ListTile(
                 title: const Text("Lista de alimentos"),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const ListaDeAlimentosPage()));
+                },
               )
             ],
           ),

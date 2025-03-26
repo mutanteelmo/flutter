@@ -1,6 +1,6 @@
 class Alimento {
   int? id;
-  String? nome;
+  String nome;
   double? calorias;
   double? carboidrato;
   double? proteina;
@@ -9,7 +9,7 @@ class Alimento {
 
   Alimento({
     this.id,
-    this.nome,
+    required this.nome,
     this.calorias,
     this.carboidrato,
     this.proteina,
@@ -21,6 +21,24 @@ class Alimento {
   @override
   String toString() {
     return 'Alimento{id: $id, name: $nome, caloria: $calorias, carboidrato: $carboidrato, proteina: $proteina, gordura: $gordura, microNutrientes: $microNutrientes}';
+  }
+
+  factory Alimento.fromJson(Map<String, dynamic> json) {
+    print(json);
+    try {
+      return Alimento(
+        id: json['id'] as int,
+        nome: json['nome'] as String,
+        calorias: (json['calorias'] as num?)?.toDouble(),
+        carboidrato: (json['carboidrato'] as num?)?.toDouble(),
+        proteina: (json['proteina'] as num?)?.toDouble(),
+        gordura: (json['gordura'] as num?)?.toDouble(),
+      );
+    } catch (e, stackTrace) {
+      print("Erro ao converter JSON para Alimento: $e");
+      print("StackTrace: $stackTrace");
+      throw const FormatException("Falha ao carregar json do alimento");
+    }
   }
 }
 
